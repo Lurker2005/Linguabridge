@@ -1,0 +1,12 @@
+def create_pdf(file_name, paragraph_text, link_url):
+    doc = SimpleDocTemplate(file_name, pagesize=letter)
+    styles = getSampleStyleSheet()
+
+    paragraph = Paragraph(paragraph_text, styles['Normal'])
+
+    link_style = ParagraphStyle(name='Link', parent=styles['Normal'], textColor='blue', alignment=TA_CENTER)
+    link_text = '<a href="%s">Click here to visit the link</a>' % link_url
+    link = Paragraph(link_text, link_style)
+
+if name == "main":
+    create_pdf("output.pdf")

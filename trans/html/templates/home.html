@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>LINGUABRIDGE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+ 
+    <title>dropdown Menu</title>
+  </head>
+  <body>
+    <form method="post">
+      <div class="menu-bar">
+        <h1 class="logo">LINGUA<span>BRIDGE.</span></h1>
+        <ul>
+          <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+          <li><a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>About</a></li>
+          <li><a href="#">Languages <i class="fas fa-caret-down"></i></a>
+  
+              <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="#">Tamil</a></li>a
+                    <li><a href="#">Malayalam</a></li>
+                    <li>
+                      <a href="#">Kanadam</i></a></li>
+                      <li><a href="#">Telungu</a></li>
+                      <li><a href="#">Gujarati</a></li>
+                      <li><a href="#">Kashmiri</a></li>
+                      <li><a href="#">Konkani</a></li>
+                      <li><a href="#">Maithili</a></li>
+                      <li><a href="#">Manipuri</a></li>
+                      <li><a href="#">Dogri</a></li>
+                      <li><a href="#">Hindi</a></li>
+                      <li><a href="#">Bodo</a></li>
+                      <li><a href="#">Assamese</a></li>
+                      
+                  </ul>
+                </div>
+          </li>
+          <li><a href="#"><i class="fa fa-window-restore" aria-hidden="true"></i>Feedback</a>
+          </li>
+          <li><a href="{{ url_for('help', param='help') }}">Help<i class="fa fa-question" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <div class="title" >
+        <h1>FREE ONLINE PDF TRANSLATOR</h1>
+      </div>
+      <div class="button">
+          <input type="file" id="pdf-file" accept=".pdf">
+          <a href="#" class="btn">ENTER THE PDF</a>
+
+
+      
+      </div>    
+      <div class="hero">
+        &nbsp;
+      </div>
+    </form>
+
+  </body>
+</html>

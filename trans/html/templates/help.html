@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>help paage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='help.css') }}">
+        <style type="text/css">
+            *{
+                text-decoration: none;
+            }
+            .navbar{
+                background-color:aqua;
+                font-family: fantasy;
+                padding-right: 40px;
+                padding-left: 29px;
+                padding-top: 30px; 
+            }
+            .navdiv{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .logo a{
+                font-size: 35px;
+                font-weight: 600;
+                color: rgb(73, 20, 173);
+            }
+            li{
+                list-style: none;
+                display: inline-block;
+            }
+            li a{
+                color: rgb(73, 99, 14); font-size: 18px;
+                font-weight:bold;
+            }
+            button{
+                background-color: rgb(20, 162, 227);
+                margin-left: 10px;
+                border-radius: 10px;
+                padding: 10px;
+                width: 90px;
+            }
+            button a{
+                color: white;
+                font-weight:bold;
+                font-size: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo"><a href="#">LINGUABRIDGE</a></div>
+                <u1>
+                <button><a href="{{ url_for('home', param='home') }}">Home</a></button>
+                </u1>
+        
+            </div>
+        </nav>
+        <div class="heading">
+            <h1> HELP PAGE</h1>                                                                                    
+
+        </div>
+        <div class="container">
+            <section class="about">
+                <div class="about-image">
+                    <img src="{{url_for('static',filename='dfa3.jpg')}}">
+                </div>
+                <div class="about-content">
+                    <h2>How It Works</h2>
+                    <h2>CREATING AN ACCOUNT:-</h2>
+                    <h3>1.Sign Up: Click on the "Sign Up" button on the top right corner.</h3>
+                    <h3>2.Fill in Your Details: Provide your name, email, and create a password.</h3>
+                    <h3>3.Verify Your Email: Check your email for a verification link and click on it to activate your account.</h3>
+
+                    <h2>LOGGING IN:-</h2>
+                    <h3>1.Click on Login: Located on the top right corner of the homepage.</h3>
+                    <h3>2.Enter Credentials: Input your registered email and password.</h3>
+                    <h3>3.Forgot Password: Click on "Forgot Password" if you need to reset your password.</h3>
+                    <h2>USING THE TRANSLATOR:-</h2>
+                    <h3>1.Uploading Documents</h3>
+                    <h3>2.Select File: Click on the "Upload" button on the homepage.</h3>
+                    <h3>3.Choose Language: Select the source and target languages.</h3>
+                    <h3>4.Submit: Click "Translate" to upload and start the translation process.</h3>
+                    <h3>5.Real-Time Translation</h3>
+                    <h3>6.Text Box: Type or paste the text you want to translate into the provided text box.</h3>
+                    <h3>7.Language Selection: Choose the source and target languages from the dropdown menus.</h3>
+                    <h3>8.Translate: Click the "Translate" button to see the translation.</h3>
+                    <h2>ACCOUNT MANAGEMENT:-</h2>
+                      <h3>1.Updating Profile</h3>
+                      <h3>2.Profile Page: Go to your profile by clicking on your username.</h3>
+                      <h3>3.Edit Details: Click on "Edit Profile" to update your information.</h3>
+                      <h3>4.Save Changes: Click "Save" to update your profile details.</h3>
+                      <h3>5.Subscription Plans</h3>
+                      <h3>6.View Plans: Go to the "Pricing" section to view available subscription plans.</h3>
+                      <h3>7.Select Plan: Choose a plan that suits your needs and click "Subscribe".</h3>
+                        
+                        
+                        
+                    
+                </div>
+            </section>
+        </div>
+        </body>
+    </body>    
